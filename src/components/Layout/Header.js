@@ -5,8 +5,8 @@ import classes from "./Header.module.css";
 const Header = (props) => {
      return ( 
           <Fragment>
-               <header>
-                    <h1 className={classes.header}>Foodies</h1>
+               <header className={classes.header}>
+                    <h1 >Foodies</h1>
                     <button>Cart</button>
                </header>
                <div className={classes["main-image"]}>
