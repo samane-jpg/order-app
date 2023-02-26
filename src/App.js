@@ -8,7 +8,7 @@ import CartProvider from './store/CartProvider';
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
 
-  const showCatHandler = () =>{
+  const showCartHandler = () =>{
     setCartIsShown(true);
   }
 
@@ -19,7 +19,7 @@ function App() {
     <CartProvider className="App">
       {cartIsShown && <Cart onClose={hideCartHandler}/>}
       
-      <Header onShowCart={showCatHandler}/>
+      <Header onShowCart={showCartHandler}/>
       <main>
         <Meals />
       </main>
